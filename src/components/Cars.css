@@ -1,0 +1,66 @@
+.cars {
+    padding: 80px 16px;
+    background: #f4f6f8;
+    position: relative;
+}
+
+.cars::before,
+.cars::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #e1e4e8, transparent);
+}
+
+.cars::before {
+    top: 0;
+}
+
+.cars::after {
+    bottom: 0;
+}
+
+.cars h2 {
+    margin-left: 50%;
+    text-align: center;
+    margin-bottom: 48px;
+    font-size: 2rem;
+    transform: translateX(-50%);
+    padding-bottom: 15px;
+}
+
+.cars h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.cars__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px
+}
+
+.car-card__cta {
+    display: inline-block;
+    margin-top: 10px;
+    background: #081027;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background .12s ease, transform .12s ease;
+}
+
+.car-card__cta:hover {
+    background: #061224;
+    transform: translateY(-2px);
+}

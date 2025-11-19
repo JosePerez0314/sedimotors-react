@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Cars from "./components/Cars";
 import FloatingBtn from "./components/FloatingBtn";
 
 export default function App() {
@@ -7,6 +8,7 @@ export default function App() {
     <div className="App">
       <Header />
       <Main />
+      <Cars />
       <FloatingBtn />
     </div>
   );
