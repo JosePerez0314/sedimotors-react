@@ -1,0 +1,112 @@
+:root {
+    --bg: #ffffff;
+    --primary: #e53935;
+    /* Principal Red */
+    --dark: #0b1220;
+    /* footer oscuro */
+    --muted: #6b7280;
+    --card-bg: #ffffff;
+    --max-width: 1440px;
+    --radius: 10px;
+}
+
+.hero {
+    position: relative;
+    min-height: 80vh;
+    padding: 36px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("../assets/hero.jpeg") center/cover no-repeat;
+    background-size: cover;
+    filter: blur(3px);
+    transform: scale(1.06);
+    z-index: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(11, 18, 32, 0.6), rgba(11, 18, 32, 0.3));
+    z-index: 1;
+}
+
+.hero__content-container {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 48px auto;
+    text-align: center;
+    color: #fff;
+    padding: 28px
+}
+
+.hero__content-container h1 {
+    font-size: 28px;
+    margin: 6px 0;
+    font-weight: 700;
+    letter-spacing: 0.6px
+}
+
+.hero__content-container h1 span {
+    color: var(--primary)
+}
+
+.hero__content-container p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 18px
+}
+
+.hero__button {
+    display: inline-block;
+    margin: 24px auto;
+    padding: 12px 20px;
+    background: var(--primary);
+    color: #fff;
+    border: 0;
+    border-radius: var(--radius);
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero__button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(229, 57, 53, 0.18);
+}
+
+.hero__button:focus {
+    outline: 3px solid rgba(229, 57, 53, 0.18);
+    outline-offset: 3px;
+}
+
+.hero .oferta-badge {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    z-index: 3;
+    background: var(--primary);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 700
+}
+
+.hero__offers {
+    position: absolute;
+    left: 18px;
+    top: 18px;
+    z-index: 3;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+}

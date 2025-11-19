@@ -1,0 +1,44 @@
+:root {
+    --bg: #ffffff;
+    --primary: #e53935;
+    /* Principal Red */
+    --dark: #0b1220;
+    /* footer oscuro */
+    --muted: #6b7280;
+    --card-bg: #ffffff;
+    --max-width: 1440px;
+    --radius: 10px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 16px;
+}
+
+.header__logo {
+    height: 100px
+}
+
+.header__social-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center
+}
+
+.header__social,
+.header__call-button {
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    padding: 6px;
+    font-size: 1.2em;
+}
+
+.header__call-button {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 10px;
+}
