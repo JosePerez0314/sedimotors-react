@@ -1,24 +1,28 @@
 import CarCard from "./CarCard.jsx";
 import "./Cars.css";
 
+import nissanImg from "../assets/nissan.jpeg";
+import crvImg from "../assets/crv.jpeg";
+import outlanderImg from "../assets/outlander.jpeg";
+
 const carList = [
   {
     id: 1,
     title: "Nissan Sentra",
     description: "Sedán compacto, eficiente y moderno",
-    image: "../assets/nissan.jpeg",
+    image: nissanImg,
   },
   {
     id: 2,
     title: "Honda CR-V",
     description: "SUV versátil, espacioso y confiable",
-    image: "../assets/crv.jpeg",
+    image: crvImg,
   },
   {
     id: 3,
     title: "Mitsubishi Outlander",
     description: "SUV familiar, tecnología avanzada",
-    image: "../assets/outlander.jpeg",
+    image: outlanderImg,
   },
 ];
 

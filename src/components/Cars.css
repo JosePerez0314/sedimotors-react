@@ -1,3 +1,15 @@
+:root {
+    --bg: #ffffff;
+    --primary: #e53935;
+    /* Principal Red */
+    --dark: #0b1220;
+    /* footer oscuro */
+    --muted: #6b7280;
+    --card-bg: #ffffff;
+    --max-width: 1440px;
+    --radius: 10px;
+}
+
 .cars {
     padding: 80px 16px;
     background: #f4f6f8;
@@ -63,4 +75,10 @@
 .car-card__cta:hover {
     background: #061224;
     transform: translateY(-2px);
+}
+
+@media (min-width: 1024px) {
+    .cars__container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

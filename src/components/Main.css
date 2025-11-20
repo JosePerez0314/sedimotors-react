@@ -110,3 +110,13 @@
     border-radius: 8px;
     font-weight: 700;
 }
+
+@media (min-width: 1024px) {
+    .hero__content-container {
+        margin: 72px auto;
+    }
+
+    .hero__content-container h1 {
+        font-size: 36px;
+    }
+}

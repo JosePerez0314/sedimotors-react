@@ -1,0 +1,99 @@
+.footer {
+    background: #101828;
+    color: #99A1AF;
+    padding: 36px 16px;
+
+}
+
+.footer p,
+.footer i {
+    color: #99A1AF;
+}
+
+.footer .container {
+    display: block
+}
+
+.footer__description {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start
+}
+
+.footer__logo {
+    height: 75px
+}
+
+.footer__contact,
+.footer__social-networks {
+    margin-top: 12px
+}
+
+.footer__social {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #99A1AF;
+    /* icons color */
+    margin-left: 6px;
+    margin-bottom: 5px;
+    padding: 8px;
+    border-radius: 8px;
+    transition: background .12s ease, transform .12s ease;
+    font-size: 24px;
+}
+
+.footer__social:hover {
+    background: rgba(255, 255, 255, 0.02);
+    transform: translateY(-2px)
+}
+
+.footer small {
+    display: block;
+    margin-top: 18px;
+    color: #99A1AF;
+}
+
+/* Footer headings: Contacto / Síguenos - white but not bold */
+.footer__contact h3,
+.footer__social-networks h3 {
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+@media (min-width: 768px) {
+    .footer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 20px;
+    }
+
+    .footer__description {
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+    }
+
+    .footer__social-networks {
+        margin-top: 0;
+        width: 80%;
+    }
+
+    .footer__description p {
+        width: 80%;
+    }
+
+    .footer__copyright {
+        text-align: center;
+        grid-column: 1 / -1;
+        margin-top: 4em;
+    }
+}
+
+@media (min-width: 1280px) {
+
+    .footer__description,
+    .footer__contact,
+    .footer__social-networks {
+        margin-left: 110px;
+    }
+}

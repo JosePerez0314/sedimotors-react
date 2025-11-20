@@ -42,3 +42,7 @@
     border-radius: 8px;
     padding: 8px 10px;
 }
+
+.header__call-button i {
+    margin-right: 10px;
+}
