@@ -1,4 +1,4 @@
-import sedimotors from "../assets/sedimotors.png";
+import sedimotors from "../../assets/sedimotors.png";
 import "./Header.css";
 
 export default function Header() {

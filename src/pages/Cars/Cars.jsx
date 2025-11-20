@@ -1,9 +1,9 @@
-import CarCard from "./CarCard.jsx";
+import CarCard from "../../components/CarCard/CarCard.jsx";
 import "./Cars.css";
 
-import nissanImg from "../assets/nissan.jpeg";
-import crvImg from "../assets/crv.jpeg";
-import outlanderImg from "../assets/outlander.jpeg";
+import nissanImg from "../../assets/nissan.jpeg";
+import crvImg from "../../assets/crv.jpeg";
+import outlanderImg from "../../assets/outlander.jpeg";
 
 const carList = [
   {

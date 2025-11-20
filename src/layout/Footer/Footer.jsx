@@ -1,5 +1,5 @@
 import "./Footer.css";
-import footerLogo from "../assets/sedimotors.png";
+import footerLogo from "../../assets/sedimotors.png";
 
 export default function Footer() {
   return (

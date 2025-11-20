@@ -23,7 +23,7 @@
     content: "";
     position: absolute;
     inset: 0;
-    background: url("../assets/hero.jpeg") center/cover no-repeat;
+    background: url("../../assets/hero.jpeg") center/cover no-repeat;
     background-size: cover;
     filter: blur(3px);
     transform: scale(1.06);

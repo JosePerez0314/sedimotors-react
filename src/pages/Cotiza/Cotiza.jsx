@@ -1,4 +1,4 @@
-import FormGroup from "./FormGroup";
+import FormGroup from "../../components/FormGroup/FormGroup.jsx";
 import "./Cotiza.css";
 
 const inputData = [
